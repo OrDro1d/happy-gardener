@@ -66,38 +66,44 @@ nav ul li a:active {
 }
 
 main {
-	background-color: aquamarine;
-	margin-top: 60px;
-	display: flex;
-	justify-content: space-around;
+	margin-top: 100px;
 }
 
-main div {
-	min-height: 455px;
-	height: 65vh;
-	padding: 40px;
-	margin: 20px;
+.greetings-screen {
+	width: 400px;
+	margin: 40px auto;
+	padding: 30px;
 }
 
-.main-screen p {
-	font-size: 44px;
-	font-weight: bolder;
-	font-style: italic;
+.greetings-text {
 	text-align: center;
 }
 
-.main-screen img {
-	width: 74%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+.greetings-text-sitesname {
+	font-family: "PT Mono", monospace;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 0;
+}
+
+.greetings-text-message {
+	margin: 0;
+}
+
+.greetings-text-brief {
+	margin: 10px;
+	font-style: italic;
+	font-size: 14px;
 }
 
 .main-buttons {
-	border: 3px solid #000000;
+	border: 1px solid #000000;
 	border-radius: 20px;
 	background-color: cyan;
 	box-shadow: 9px 9px 20px rgba(0, 0, 0, 0.799);
+	height: 40vh;
+	min-height: 255px;
+	margin: 20px;
 }
 
 .main-buttons ul {
@@ -127,18 +133,18 @@ main div {
 	min-width: 40px;
 	padding: 20px;
 	font-size: 24px;
-	border: 3px solid #000000;
+	border: 1px solid #000000;
 	border-radius: 100px;
 }
 
 .main-buttons ul li a:hover {
-	border: 3px solid #000000;
+	border: 1px solid #000000;
 	background-color: rgb(0, 193, 193);
 	transition: 0.3s;
 }
 
 .main-buttons ul li a:active {
-	border: 3px solid #000000;
+	border: 1px solid #000000;
 	box-shadow: 0px 0px;
 	background-color: rgb(0, 135, 135);
 	transition: 0.1s;
@@ -150,6 +156,12 @@ footer {
 	padding: 30px;
 }
 
-footer p {
+.additions {
+	text-align: center;
 	margin: 0px;
+}
+
+.additions a {
+	text-decoration: none;
+	color: black;
 }
