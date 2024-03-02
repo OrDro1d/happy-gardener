@@ -1,0 +1,155 @@
+html {
+	font-family: "Segoe UI", sans-serif;
+}
+
+body {
+	margin: 0;
+	min-width: 800px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: cyan;
+	box-shadow: 0px 0px 20px 1px;
+	height: 60px;
+}
+
+nav ul {
+	display: flex;
+	justify-content: end;
+	list-style: none;
+	height: 100%;
+	margin: 0;
+}
+
+nav img {
+	height: 30px;
+	display: block;
+	padding: 15px;
+}
+
+nav ul li {
+	height: 100%;
+	width: 120px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+nav ul li a {
+	display: inline-block;
+	border-left: 2px solid cyan;
+	border-right: 2px solid cyan;
+	text-decoration: none;
+	color: black;
+	height: 50%;
+	width: 50%;
+	padding: 15px 30px;
+}
+
+nav ul li a:hover {
+	border-left: 2px solid #000000;
+	border-right: 2px solid #000000;
+	background-color: rgb(0, 193, 193);
+	transition: 0.3s;
+}
+
+nav ul li a:active {
+	border-left: 2px solid #000000;
+	border-right: 2px solid #000000;
+	background-color: rgb(0, 135, 135);
+	transition: 0.1s;
+}
+
+main {
+	background-color: aquamarine;
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-around;
+}
+
+main div {
+	min-height: 455px;
+	height: 65vh;
+	padding: 40px;
+	margin: 20px;
+}
+
+.main-screen p {
+	font-size: 44px;
+	font-weight: bolder;
+	font-style: italic;
+	text-align: center;
+}
+
+.main-screen img {
+	width: 74%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main-buttons {
+	border: 3px solid #000000;
+	border-radius: 20px;
+	background-color: cyan;
+	box-shadow: 9px 9px 20px rgba(0, 0, 0, 0.799);
+}
+
+.main-buttons ul {
+	display: flex;
+	justify-content: start;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.main-buttons ul li {
+	border-left: 1px solid cyan;
+	margin: 20px;
+}
+
+.main-buttons ul li a {
+	display: inline-block;
+	background-color: aquamarine;
+	box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.799);
+	border: 1px solid cyan;
+	text-decoration: none;
+	color: #000000;
+	text-align: center;
+	height: 10px;
+	min-height: 30px;
+	min-width: 40px;
+	padding: 20px;
+	font-size: 24px;
+	border: 3px solid #000000;
+	border-radius: 100px;
+}
+
+.main-buttons ul li a:hover {
+	border: 3px solid #000000;
+	background-color: rgb(0, 193, 193);
+	transition: 0.3s;
+}
+
+.main-buttons ul li a:active {
+	border: 3px solid #000000;
+	box-shadow: 0px 0px;
+	background-color: rgb(0, 135, 135);
+	transition: 0.1s;
+}
+
+footer {
+	background-color: lightgray;
+	height: 60px;
+	padding: 30px;
+}
+
+footer p {
+	margin: 0px;
+}
