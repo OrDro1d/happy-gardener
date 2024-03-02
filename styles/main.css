@@ -19,7 +19,7 @@ nav {
 	height: 60px;
 }
 
-nav ul {
+nav div {
 	display: flex;
 	justify-content: end;
 	list-style: none;
@@ -33,14 +33,14 @@ nav img {
 	padding: 15px;
 }
 
-nav ul li {
+nav div a {
 	height: 100%;
 	width: 120px;
 	text-align: center;
 	vertical-align: middle;
 }
 
-nav ul li a {
+nav div a {
 	display: inline-block;
 	border-left: 2px solid cyan;
 	border-right: 2px solid cyan;
@@ -51,22 +51,18 @@ nav ul li a {
 	padding: 15px 30px;
 }
 
-nav ul li a:hover {
-	border-left: 2px solid #000000;
-	border-right: 2px solid #000000;
-	background-color: rgb(0, 193, 193);
+nav div a:hover {
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	background-color: rgb(149, 254, 254);
 	transition: 0.3s;
 }
 
-nav ul li a:active {
-	border-left: 2px solid #000000;
-	border-right: 2px solid #000000;
-	background-color: rgb(0, 135, 135);
+nav div a:active {
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	background-color: rgb(10, 191, 191);
 	transition: 0.1s;
-}
-
-main {
-	margin-top: 100px;
 }
 
 .greetings-screen {
@@ -82,7 +78,7 @@ main {
 .greetings-text-sitesname {
 	font-family: "PT Mono", monospace;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 32px;
 	margin: 0;
 }
 
@@ -96,58 +92,79 @@ main {
 	font-size: 14px;
 }
 
+main {
+	margin-top: 100px;
+}
+
 .main-buttons {
 	border: 1px solid #000000;
 	border-radius: 20px;
 	background-color: cyan;
 	box-shadow: 9px 9px 20px rgba(0, 0, 0, 0.799);
-	height: 40vh;
 	min-height: 255px;
+	padding: 40px;
 	margin: 20px;
 }
 
-.main-buttons ul {
+.main-buttons button {
 	display: flex;
-	justify-content: start;
-	flex-wrap: wrap;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-.main-buttons ul li {
-	border-left: 1px solid cyan;
-	margin: 20px;
-}
-
-.main-buttons ul li a {
-	display: inline-block;
-	background-color: aquamarine;
-	box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.799);
-	border: 1px solid cyan;
+	justify-content: space-evenly;
+	transition: 0.2s;
 	text-decoration: none;
-	color: #000000;
-	text-align: center;
-	height: 10px;
-	min-height: 30px;
-	min-width: 40px;
+	color: black;
+	background: none;
+	border: none;
+	width: 100%;
 	padding: 20px;
-	font-size: 24px;
-	border: 1px solid #000000;
-	border-radius: 100px;
 }
 
-.main-buttons ul li a:hover {
-	border: 1px solid #000000;
-	background-color: rgb(0, 193, 193);
-	transition: 0.3s;
+.main-buttons button:hover {
+	background-color: rgb(149, 254, 254);
+	box-shadow: 9px 9px 20px rgba(0, 0, 0, 0.799);
+	border-radius: 20px;
+	cursor: pointer;
 }
 
-.main-buttons ul li a:active {
-	border: 1px solid #000000;
-	box-shadow: 0px 0px;
-	background-color: rgb(0, 135, 135);
-	transition: 0.1s;
+.main-buttons button:active {
+	background-color: rgb(10, 191, 191);
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.buttons-text {
+	width: 50%;
+}
+
+.buttons-name {
+	font-family: "PT Mono", monospace;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.buttons-description {
+	font-size: 14px;
+}
+
+.left .buttons-description {
+	padding-left: 40px;
+	margin-right: 160px;
+}
+
+.right .buttons-description {
+	padding-right: 40px;
+	margin-left: 160px;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.main-buttons button img {
+	height: 150px;
 }
 
 footer {
@@ -164,4 +181,8 @@ footer {
 .additions a {
 	text-decoration: none;
 	color: black;
+}
+
+.additions a:active {
+	font-weight: bold;
 }
