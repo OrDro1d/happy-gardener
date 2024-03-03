@@ -7,7 +7,7 @@
 // document.querySelector("html").onclick = () =>
 // 	alert("Что Вы себе позволяете?! Прекратите сейчас же!");
 
-document.querySelector("main div img").ondblclick = () =>
+document.querySelector(".profile").ondblclick = () =>
 	alert("Щекотно! Хи-хи-хи");
 
 // document.querySelector("html").ondblclick = () => alert("Прекратите СЕЙЧАС!");

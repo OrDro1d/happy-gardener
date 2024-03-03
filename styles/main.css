@@ -14,17 +14,9 @@ nav {
 	top: 0;
 	left: 0;
 	right: 0;
-	background-color: cyan;
+	background-color: aquamarine;
 	box-shadow: 0px 0px 20px 1px;
 	height: 60px;
-}
-
-nav div {
-	display: flex;
-	justify-content: end;
-	list-style: none;
-	height: 100%;
-	margin: 0;
 }
 
 nav img {
@@ -33,17 +25,14 @@ nav img {
 	padding: 15px;
 }
 
-nav div a {
+.nav-buttons a {
 	height: 100%;
 	width: 120px;
 	text-align: center;
 	vertical-align: middle;
-}
-
-nav div a {
 	display: inline-block;
-	border-left: 2px solid cyan;
-	border-right: 2px solid cyan;
+	border-left: 1px solid aquamarine;
+	border-right: 1px solid aquamarine;
 	text-decoration: none;
 	color: black;
 	height: 50%;
@@ -51,17 +40,62 @@ nav div a {
 	padding: 15px 30px;
 }
 
+.nav-buttons {
+	display: flex;
+	justify-content: end;
+	list-style: none;
+	height: 100%;
+	margin: 0;
+}
+
+.nav-buttons-profile-link {
+	background-color: rgb(70, 255, 193);
+	box-shadow: 0px 0px 5px darkslategrey;
+	transition: 1s;
+}
+
+.nav-buttons-profile-link:hover {
+	background-color: rgb(143, 252, 216);
+	box-shadow: 0px 0px 5px darkslategrey;
+}
+
+.nav-buttons-profile-link:active {
+	background-color: rgb(18, 255, 176);
+	box-shadow: none;
+}
+
+.nav-buttons-profile {
+	display: flex;
+	justify-content: space-between;
+	width: 120px;
+}
+
+.nav-buttons-profile * {
+	margin: 0;
+	padding: 0;
+}
+
+.nav-buttons-profile img {
+	border-radius: 100%;
+	background-color: lightgray;
+}
+
+.nav-buttons-profile p {
+	display: inline-block;
+	text-align: start;
+}
+
 nav div a:hover {
-	border-left: 1px solid #000000;
-	border-right: 1px solid #000000;
-	background-color: rgb(149, 254, 254);
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	background-color: rgb(171, 251, 224);
 	transition: 0.3s;
 }
 
 nav div a:active {
-	border-left: 1px solid #000000;
-	border-right: 1px solid #000000;
-	background-color: rgb(10, 191, 191);
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	background-color: rgb(70, 255, 193);
 	transition: 0.1s;
 }
 
@@ -97,10 +131,10 @@ main {
 }
 
 .main-buttons {
-	border: 1px solid #000000;
+	border: 1px solid black;
 	border-radius: 20px;
-	background-color: cyan;
-	box-shadow: 9px 9px 20px rgba(0, 0, 0, 0.799);
+	background-color: aquamarine;
+	box-shadow: 9px 9px 15px darkslategrey;
 	min-height: 255px;
 	padding: 40px;
 	margin: 20px;
@@ -109,25 +143,26 @@ main {
 .main-buttons button {
 	display: flex;
 	justify-content: space-evenly;
-	transition: 0.2s;
+	transition: 0.3s;
 	text-decoration: none;
 	color: black;
 	background: none;
 	border: none;
+	border-radius: 20px;
 	width: 100%;
 	padding: 20px;
 }
 
 .main-buttons button:hover {
-	background-color: rgb(149, 254, 254);
-	box-shadow: 9px 9px 20px rgba(0, 0, 0, 0.799);
+	background-color: rgb(171, 251, 224);
+	box-shadow: 9px 9px 15px darkslategrey;
 	border-radius: 20px;
 	cursor: pointer;
 }
 
 .main-buttons button:active {
-	background-color: rgb(10, 191, 191);
-	border-radius: 20px;
+	background-color: rgb(70, 255, 193);
+	box-shadow: 9px 9px 5px darkslategrey;
 	cursor: pointer;
 }
 
@@ -142,6 +177,8 @@ main {
 }
 
 .buttons-description {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
 	font-size: 14px;
 }
 
